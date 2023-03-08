@@ -5,6 +5,55 @@ $circular : 'CircularXXWeb';
     letter-spacing: ($spacing / 1000) * 1em;
 }
 
+@mixin slide {
+    a{
+        display: block;
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        padding-top: 75%;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+    .text{
+        padding-top: 30px;
+        p{
+            font-family: $circular;
+            font-size: 25px;
+            line-height: 30px;
+
+            &:first-child{
+                margin: 0 0 25px;
+                padding-left: 24px;
+                position: relative;
+
+                &::before{
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    background-color: #000;
+                    border-radius: 50%;
+                    position: absolute;
+                    z-index: 2;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
 body{
     margin: 0 !important;
     width: 100%;
@@ -146,6 +195,21 @@ section{
             font-weight: 500;
             font-size: 20px;
             line-height: 1;
+        }
+
+        button{
+            background-color: #000;
+            color: #fff;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $circular;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 500;
+            height: 56px;
+            border-radius: 5px;
         }
     }
 }
@@ -355,52 +419,7 @@ footer{
     padding: 100px 0;
 
     .swiper-slide{
-        a{
-            display: block;
-            width: 100%;
-        }
-        .image{
-            width: 100%;
-            padding-top: 75%;
-            position: relative;
-
-            img{
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                z-index: 2;
-                top: 0;
-                left: 0;
-                object-fit: cover;
-            }
-        }
-        .text{
-            padding-top: 30px;
-            p{
-                font-family: $circular;
-                font-size: 25px;
-                line-height: 30px;
-
-                &:first-child{
-                    margin: 0 0 25px;
-                    padding-left: 24px;
-                    position: relative;
-
-                    &::before{
-                        content: "";
-                        width: 12px;
-                        height: 12px;
-                        background-color: #000;
-                        border-radius: 50%;
-                        position: absolute;
-                        z-index: 2;
-                        top: 50%;
-                        left: 0;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-        }
+        @include slide;
     }
 }
 
@@ -519,6 +538,20 @@ footer{
 
         form{            
             width: 100%;
+        }
+    }
+}
+
+.videoArchive{
+    padding: 140px 0 40px;
+
+    .videoGrid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 40px;
+
+        .video{
+            @include slide;
         }
     }
 }

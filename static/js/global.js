@@ -35,7 +35,11 @@ var ClassSlider = new Swiper('.swiper2', {
 			slidesPerView: 3,
 			spaceBetween: 30,
 		},
-		1800: {
+		1600: {
+			slidesPerView: 4,
+			spaceBetween: 40,
+		},
+		2000: {
 			slidesPerView: 4,
 			spaceBetween: 40,
 		}

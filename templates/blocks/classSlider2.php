@@ -1,8 +1,8 @@
 <section class="classSlider">
     <div class="container">
         <div class="top">
-            <h3>Recorded Classes</h3>
-            <a href="#">See all</a>
+            <h3>Upcoming Classes</h3>
+            <button class="js-toggle-reserve">Reserve a slot</button>
         </div>  
         <div class="swiper-container swiper2">
             <div class="swiper-wrapper">

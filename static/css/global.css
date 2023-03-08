@@ -132,6 +132,20 @@ section .container > .top a {
   font-size: 20px;
   line-height: 1;
 }
+section .container > .top button {
+  background-color: #000;
+  color: #fff;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "CircularXXWeb";
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 500;
+  height: 56px;
+  border-radius: 5px;
+}
 
 header {
   width: 100%;
@@ -446,4 +460,58 @@ footer .copywrite p {
 }
 .login .form form {
   width: 100%;
+}
+
+.videoArchive {
+  padding: 140px 0 40px;
+}
+.videoArchive .videoGrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.videoArchive .videoGrid .video a {
+  display: block;
+  width: 100%;
+}
+.videoArchive .videoGrid .video .image {
+  width: 100%;
+  padding-top: 75%;
+  position: relative;
+}
+.videoArchive .videoGrid .video .image img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.videoArchive .videoGrid .video .text {
+  padding-top: 30px;
+}
+.videoArchive .videoGrid .video .text p {
+  font-family: "CircularXXWeb";
+  font-size: 25px;
+  line-height: 30px;
+}
+.videoArchive .videoGrid .video .text p:first-child {
+  margin: 0 0 25px;
+  padding-left: 24px;
+  position: relative;
+}
+.videoArchive .videoGrid .video .text p:first-child::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=global.css.map */
