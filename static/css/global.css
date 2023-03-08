@@ -471,6 +471,14 @@ footer .copywrite p {
   -moz-column-gap: 40px;
        column-gap: 40px;
 }
+@media (max-width: 2000px) {
+  .videoArchive .videoGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.videoArchive .videoGrid .video {
+  padding-bottom: 60px;
+}
 .videoArchive .videoGrid .video a {
   display: block;
   width: 100%;

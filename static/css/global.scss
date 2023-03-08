@@ -550,8 +550,13 @@ footer{
         grid-template-columns: repeat(5, 1fr);
         column-gap: 40px;
 
+        @media (max-width: 2000px){
+            grid-template-columns: repeat(4, 1fr);
+        }
+
         .video{
             @include slide;
+            padding-bottom: 60px;
         }
     }
 }
