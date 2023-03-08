@@ -40,7 +40,7 @@ var ClassSlider = new Swiper('.swiper2', {
 			spaceBetween: 40,
 		},
 		2000: {
-			slidesPerView: 4,
+			slidesPerView: 5,
 			spaceBetween: 40,
 		}
 	},
