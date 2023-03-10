@@ -9,6 +9,11 @@
         <?php include('templates/blocks/videoArchive.php'); ?>
         <?php include('templates/blocks/classSlider2.php'); ?>
 
+
+        <?php include('templates/blocks/videoUpload.php'); ?>
+        <?php include('templates/blocks/reserveNow.php'); ?>
+        
+        <div class="mainOverlay"></div>
         <?php include('templates/blocks/footer.php'); ?>
 
         <?php include('templates/blocks/scripts.php'); ?>

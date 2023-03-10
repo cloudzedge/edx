@@ -23,7 +23,7 @@ var HeroSlider = new Swiper('.hero .swiper-container', {
 var ClassSlider = new Swiper('.swiper2', {
 	direction: 'horizontal',
 	loop: false,
-	slidesPerView: 1.5,
+	slidesPerView: 1.15,
 	spaceBetween: 20,
 	centeredSlides: false,
 	breakpoints: {
@@ -49,4 +49,20 @@ var ClassSlider = new Swiper('.swiper2', {
 	  prevEl: '.product_search_slider .swiper-button-prev',
 	},
 });
+
+$('.js-toggle-upload').click(function(){
+	$('.videoUpload').addClass('active');
+	$('.mainOverlay').addClass('active');
+})
+
+$('.js-toggle-reserve').click(function(){
+	$('.reserveNow').addClass('active');
+	$('.mainOverlay').addClass('active');
+})
+
+$('.mainOverlay, .close-this').click(function(){
+	$('.videoUpload').removeClass('active');
+	$('.reserveNow').removeClass('active');
+	$('.mainOverlay').removeClass('active');
+})
 
