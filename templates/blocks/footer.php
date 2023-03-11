@@ -5,7 +5,7 @@
                 <p>804-D 229, <br> Business Bay, <br> Dubai, <br> United Arab Emirates</p>
             </div>
             <div class="column">
-                <p>+971 56 155 0550 <br> infor@ektbly.com</p>
+                <p>+971 56 155 0550 <br> info@ektbly.com</p>
             </div>
             <div class="column">
                 <a href="https://play.google.com/store/apps/details?id=com.learn.ektbly&pli=1" target="_blank">
