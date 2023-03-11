@@ -5,7 +5,15 @@
                 <p>804-D 229, <br> Business Bay, <br> Dubai, <br> United Arab Emirates</p>
             </div>
             <div class="column">
-                <p>(+971) 4 456 4569 <br> infor@namehere.com</p>
+                <p>+971 56 155 0550 <br> infor@ektbly.com</p>
+            </div>
+            <div class="column">
+                <a href="https://play.google.com/store/apps/details?id=com.learn.ektbly&pli=1" target="_blank">
+                    <img src="static/img/appstore.png" alt="Ektbly">
+                </a> 
+                <a href="https://apps.apple.com/in/app/ektbly/id1625943510?uo=2" target="_blank">
+                    <img src="static/img/playstore.png" alt="Ektbly">
+                </a>
             </div>
         </div>
         <div class="right getinTouch">
@@ -42,7 +50,7 @@
             <p>804-D 229, Business Bay, Dubai</p>
         </div>
         <div class="right">
-            <p>Ektbly © 2023</p>
+            <p>Copyright 2023 © EKTBLY Education Services. All Rights Reserved</p>
         </div>
     </div>
 </footer>

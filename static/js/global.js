@@ -9,14 +9,22 @@ $(window).on("load resize scroll",function(e){
     }
 });
 
-
 var HeroSlider = new Swiper('.hero .swiper-container', {
 	loop: true,
 	slidesPerView: 1,
 	spaceBetween: 0,
-	navigation: {
-	  nextEl: '.product_search_slider .swiper-button-next',
-	  prevEl: '.product_search_slider .swiper-button-prev',
+	autoplay: {
+		delay: 3000,
+	}, 
+	autoplayDisableOnInteraction: false,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: 'true',
+		type: 'bullets',
+		renderBullet: function (index, className) {
+			return '<span class="' + className + '">' + '<i></i>' + '<b></b>'  + '</span>';
+		  },
+	
 	},
 });
 
@@ -53,16 +61,19 @@ var ClassSlider = new Swiper('.swiper2', {
 $('.js-toggle-upload').click(function(){
 	$('.videoUpload').addClass('active');
 	$('.mainOverlay').addClass('active');
+	$('body').addClass('locked');
 })
 
 $('.js-toggle-reserve').click(function(){
 	$('.reserveNow').addClass('active');
 	$('.mainOverlay').addClass('active');
+	$('body').addClass('locked');
 })
 
 $('.mainOverlay, .close-this').click(function(){
 	$('.videoUpload').removeClass('active');
 	$('.reserveNow').removeClass('active');
 	$('.mainOverlay').removeClass('active');
+	$('body').removeClass('locked');
 })
 
