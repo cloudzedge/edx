@@ -1,3 +1,7 @@
+$('select').selectric({
+	maxHeight: 200
+});
+
 $(window).on("load resize scroll",function(e){
     var containerHeight = $('.hero').height() - 100;
     var windowHeight = ($(window).scrollTop());   
@@ -76,4 +80,6 @@ $('.mainOverlay, .close-this').click(function(){
 	$('.mainOverlay').removeClass('active');
 	$('body').removeClass('locked');
 })
+
+
 

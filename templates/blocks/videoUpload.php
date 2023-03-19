@@ -9,7 +9,10 @@
         <form action="">
             <div class="formGroup">
                 <label>Syllabus</label>
-                <input type="text">
+                <select name="" id="">
+                    <option value="">Physics</option>
+                    <option value="">Maths</option>
+                </select>
             </div>
             <div class="split">
                 <div class="formGroup">
@@ -23,7 +26,7 @@
             </div>
             <div class="formGroup">
                 <label>Description</label>
-                <input type="password">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
             <div class="uploadBx">   
                 <input type="file" hidden id="videoUpload" accept="video/mp4,video/x-m4v,video/*" name="myFile">             

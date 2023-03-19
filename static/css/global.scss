@@ -1,6 +1,8 @@
 $helvetica : 'Helvetica Neue';
 $circular : 'CircularXXWeb';
 
+@import "selectric";
+
 @mixin letter-spacing($spacing) {
     letter-spacing: ($spacing / 1000) * 1em;
 }
@@ -173,6 +175,9 @@ input{
     box-sizing: border-box;
     border-bottom: 1px solid #BFBFBF;
     background-color: transparent;
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
 
     &:hover, &:focus{
         outline: none;
@@ -191,6 +196,22 @@ input[type=submit], button[type=submit]{
     font-size: 20px;
     line-height: 1;
     font-weight: 500;
+}
+textarea{
+    width: 100%;
+    padding: 15px;
+    height: 200px;
+    resize: none;
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
+    border: 1px solid #BFBFBF;
+    margin: 10px 0;
+
+    &:hover, &:focus{
+        outline: none;
+        box-shadow: none;
+    }
 }
 
 form{
@@ -1037,6 +1058,4 @@ footer{
     0% {width: 0;}
     100% {width:100%;}
 }
-
-
 
